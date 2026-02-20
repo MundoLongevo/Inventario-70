@@ -12,209 +12,110 @@
   --creme:#FFF8EE; --escuro:#1A1A2E;
 }
 *{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Nunito',sans-serif;background:var(--creme);min-height:100vh;padding:0;overflow-x:hidden}
 
-body{
-  font-family:'Nunito',sans-serif;
-  background:var(--creme);
-  min-height:100vh;
-  padding:0;
-  overflow-x:hidden;
-}
-
-/* TOPO FIXO */
 .top-bar{
   position:sticky;top:0;z-index:100;
-  background:var(--creme);
-  border-bottom:2px solid rgba(26,26,46,.1);
-  padding:10px 16px 8px;
-  display:flex;align-items:center;justify-content:space-between;
-  gap:8px;
+  background:var(--creme);border-bottom:2px solid rgba(26,26,46,.1);
+  padding:10px 14px 8px;
+  display:flex;align-items:center;justify-content:space-between;gap:6px;
 }
-.top-brand{
-  font-family:'Fraunces',serif;
-  font-size:1.5rem;font-weight:900;color:var(--escuro);
-  line-height:1;
-}
+.top-brand{font-family:'Fraunces',serif;font-size:1.45rem;font-weight:900;color:var(--escuro);line-height:1}
 .top-brand span{color:var(--laranja);font-style:italic}
-.top-score{
-  display:flex;gap:6px;align-items:center;flex-shrink:0;
-}
-.pill{
-  background:#fff;border:2px solid var(--escuro);border-radius:10px;
-  padding:4px 10px;font-family:'Fraunces',serif;
-  font-size:1rem;font-weight:900;box-shadow:2px 2px 0 var(--escuro);
-  white-space:nowrap;
-}
-.pill small{font-size:.65rem;color:#aaa;font-family:'Nunito',sans-serif;font-weight:700}
-.pill.c1{color:var(--laranja)}
-.pill.c2{color:#9B7DB6}
-.pill.ct{color:var(--escuro)}
-.reset-btn{
-  background:var(--escuro);color:#fff;border:none;border-radius:9px;
-  padding:7px 12px;font-family:'Nunito',sans-serif;
-  font-size:.8rem;font-weight:800;cursor:pointer;
-  box-shadow:2px 2px 0 var(--laranja);
-  white-space:nowrap;
-}
+.top-score{display:flex;gap:5px;align-items:center;flex-shrink:0}
+.pill{background:#fff;border:2px solid var(--escuro);border-radius:9px;
+  padding:3px 9px;font-family:'Fraunces',serif;font-size:.95rem;font-weight:900;
+  box-shadow:2px 2px 0 var(--escuro);white-space:nowrap}
+.pill small{font-size:.6rem;color:#aaa;font-family:'Nunito',sans-serif;font-weight:700}
+.pill.c1{color:var(--laranja)} .pill.c2{color:#9B7DB6} .pill.ct{color:var(--escuro)}
+.reset-btn{background:var(--escuro);color:#fff;border:none;border-radius:9px;
+  padding:7px 11px;font-family:'Nunito',sans-serif;font-size:.78rem;font-weight:800;
+  cursor:pointer;box-shadow:2px 2px 0 var(--laranja);white-space:nowrap}
 
-/* HEADER HERO */
-.hero{
-  text-align:center;padding:28px 20px 20px;
-  background:linear-gradient(160deg,#fff8ee 60%,#ffe8da);
-}
-.badge{
-  display:inline-block;background:var(--laranja);color:#fff;
-  font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;
-  padding:4px 14px;border-radius:20px;margin-bottom:12px;
-}
-.hero h1{
-  font-family:'Fraunces',serif;font-size:3.2rem;font-weight:900;
-  color:var(--escuro);line-height:1;margin-bottom:8px;
-}
+.hero{text-align:center;padding:26px 20px 18px;background:linear-gradient(160deg,#fff8ee 60%,#ffe8da)}
+.badge{display:inline-block;background:var(--laranja);color:#fff;font-size:10px;font-weight:800;
+  letter-spacing:2px;text-transform:uppercase;padding:4px 14px;border-radius:20px;margin-bottom:12px}
+.hero h1{font-family:'Fraunces',serif;font-size:3rem;font-weight:900;color:var(--escuro);line-height:1;margin-bottom:8px}
 .hero h1 span{color:var(--laranja);font-style:italic}
-.hero p{font-size:1rem;color:#666;line-height:1.55;max-width:400px;margin:0 auto 6px}
-.hero .autoria{font-size:.8rem;color:#bbb;font-style:italic}
+.hero p{font-size:.98rem;color:#666;line-height:1.55;max-width:380px;margin:0 auto 5px}
+.hero .autoria{font-size:.78rem;color:#bbb;font-style:italic}
 
-/* NAVEGAÇÃO DE PÁGINAS */
-.nav-wrap{
-  display:flex;align-items:center;justify-content:space-between;
-  padding:12px 16px;gap:8px;
-  max-width:480px;margin:0 auto;
-}
-.nav-btn{
-  background:#fff;border:2.5px solid var(--escuro);border-radius:12px;
-  padding:10px 18px;font-family:'Nunito',sans-serif;font-weight:800;
-  font-size:.95rem;cursor:pointer;box-shadow:3px 3px 0 var(--escuro);
-  transition:transform .1s,box-shadow .1s;flex-shrink:0;
-}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;
+  padding:12px 16px;gap:8px;max-width:480px;margin:0 auto}
+.nav-btn{background:#fff;border:2.5px solid var(--escuro);border-radius:12px;
+  padding:11px 16px;font-family:'Nunito',sans-serif;font-weight:800;font-size:.95rem;
+  cursor:pointer;box-shadow:3px 3px 0 var(--escuro);transition:transform .1s,box-shadow .1s;flex-shrink:0}
 .nav-btn:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--escuro)}
 .nav-btn:active{transform:translate(1px,1px);box-shadow:2px 2px 0 var(--escuro)}
-.nav-btn:disabled{opacity:.3;cursor:default;transform:none;box-shadow:3px 3px 0 var(--escuro)}
-.page-info{
-  text-align:center;flex:1;
-}
-.page-num{
-  font-family:'Fraunces',serif;font-size:1.4rem;font-weight:900;color:var(--escuro);line-height:1;
-}
-.page-label{font-size:.72rem;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+.nav-btn:disabled{opacity:.3;cursor:default;transform:none!important;box-shadow:3px 3px 0 var(--escuro)!important}
+.page-info{text-align:center;flex:1}
+.page-num{font-family:'Fraunces',serif;font-size:1.5rem;font-weight:900;color:var(--escuro);line-height:1}
+.page-label{font-size:.68rem;color:#999;font-weight:800;text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
 
-/* BLOCO TITLE */
-.bloco-title{
-  text-align:center;padding:6px 16px 2px;
-}
-.bloco-badge{
-  display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:1px;
+.bloco-title{text-align:center;padding:4px 16px 2px}
+.bloco-badge{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:1px;
   text-transform:uppercase;padding:3px 12px;border-radius:20px;
-  border:2px solid var(--escuro);color:var(--escuro);background:transparent;
-  margin-bottom:4px;
-}
-.bloco-name{
-  font-family:'Fraunces',serif;font-size:1.15rem;font-weight:900;
-  color:var(--escuro);font-style:italic;
-}
+  border:2px solid var(--escuro);color:var(--escuro);margin-bottom:4px}
+.bloco-name{font-family:'Fraunces',serif;font-size:1.1rem;font-weight:900;color:var(--escuro);font-style:italic}
 
-/* GRID DE CARDS — 2x3 (6 por página) */
-.grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
-  padding:14px 16px 20px;
-  max-width:480px;
-  margin:0 auto;
-}
+.progress-wrap{padding:8px 16px 4px;max-width:480px;margin:0 auto}
+.progress-bar{background:#e8e0d8;border-radius:99px;height:8px;overflow:hidden}
+.progress-fill{height:100%;border-radius:99px;background:var(--laranja);transition:width .4s ease}
+.progress-label{font-size:.7rem;color:#999;font-weight:700;margin-top:4px;text-align:right}
 
-/* CARD */
-.card{
-  background:#fff;border:2.5px solid var(--escuro);border-radius:16px;
-  padding:18px 12px 16px;text-align:center;cursor:pointer;
-  transition:transform .17s,box-shadow .17s;
-  box-shadow:4px 4px 0 var(--escuro);
-  position:relative;overflow:hidden;
-  min-height:160px;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
-  user-select:none;
-}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;
+  padding:12px 16px 20px;max-width:480px;margin:0 auto;min-height:340px}
+
+.card{background:#fff;border:2.5px solid var(--escuro);border-radius:16px;
+  padding:18px 12px 15px;text-align:center;cursor:pointer;
+  transition:transform .17s,box-shadow .17s;box-shadow:4px 4px 0 var(--escuro);
+  position:relative;overflow:hidden;min-height:165px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;
+  user-select:none}
 .card.sol{background:#F8F4F1}
-.card::before{
-  content:'';position:absolute;inset:0;
-  background:var(--cc,#FFD166);opacity:0;
-  transition:opacity .28s;border-radius:14px;
-}
+.card::before{content:'';position:absolute;inset:0;background:var(--cc,#FFD166);
+  opacity:0;transition:opacity .28s;border-radius:14px}
 .card:active{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--escuro)}
 .card.on::before{opacity:1}
 .card.on{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--escuro)}
-
-.card-verb{
-  font-size:.65rem;font-weight:800;letter-spacing:.8px;
-  text-transform:uppercase;color:#bbb;position:relative;z-index:1;
-}
+.card-verb{font-size:.62rem;font-weight:800;letter-spacing:.7px;text-transform:uppercase;
+  color:#bbb;position:relative;z-index:1}
 .card.on .card-verb{color:rgba(26,26,46,.4)}
-
-.card-meta{
-  font-size:.6rem;font-weight:800;letter-spacing:.3px;text-transform:uppercase;
-  padding:2px 8px;border-radius:6px;border:1.5px solid currentColor;
-  position:relative;z-index:1;opacity:.55;
-}
-.card-emoji{
-  font-size:2.2rem;position:relative;z-index:1;transition:transform .28s;
-}
+.card-meta{font-size:.58rem;font-weight:800;letter-spacing:.3px;text-transform:uppercase;
+  padding:2px 7px;border-radius:6px;border:1.5px solid currentColor;
+  position:relative;z-index:1;opacity:.55}
+.card-emoji{font-size:2.1rem;position:relative;z-index:1;transition:transform .28s}
 .card.on .card-emoji{transform:scale(1.3) rotate(-6deg)}
-
-.card-text{
-  font-size:.85rem;font-weight:700;color:var(--escuro);
-  line-height:1.4;position:relative;z-index:1;
-}
-.chk{
-  position:absolute;top:8px;right:8px;width:26px;height:26px;
-  background:var(--escuro);border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  color:var(--amarelo);font-size:13px;font-weight:900;
-  opacity:0;transform:scale(0);
-  transition:all .28s cubic-bezier(.34,1.56,.64,1);z-index:2;
-}
+.card-text{font-size:.84rem;font-weight:700;color:var(--escuro);line-height:1.4;
+  position:relative;z-index:1}
+.chk{position:absolute;top:8px;right:8px;width:26px;height:26px;
+  background:var(--escuro);border-radius:50%;display:flex;align-items:center;
+  justify-content:center;color:var(--amarelo);font-size:13px;font-weight:900;
+  opacity:0;transform:scale(0);transition:all .28s cubic-bezier(.34,1.56,.64,1);z-index:2}
 .card.on .chk{opacity:1;transform:scale(1)}
 
-/* BARRA DE PROGRESSO */
-.progress-wrap{padding:0 16px 10px;max-width:480px;margin:0 auto}
-.progress-bar{background:#e8e0d8;border-radius:99px;height:8px;overflow:hidden}
-.progress-fill{height:100%;border-radius:99px;background:var(--laranja);
-  transition:width .4s ease}
-.progress-label{font-size:.72rem;color:#999;font-weight:700;margin-top:4px;text-align:right}
-
-/* RESULTADO */
-.result-box{
-  margin:8px 16px 20px;max-width:448px;margin-left:auto;margin-right:auto;
+.result-box{margin:6px 16px 20px;max-width:448px;margin-left:auto;margin-right:auto;
   background:#fff;border:3px solid var(--escuro);border-radius:18px;
-  padding:16px 20px;box-shadow:5px 5px 0 var(--escuro);
+  padding:14px 18px;box-shadow:5px 5px 0 var(--escuro);
   display:none;flex-direction:column;gap:4px;text-align:center;
-  animation:popIn .4s cubic-bezier(.34,1.56,.64,1);
-}
+  animation:popIn .4s cubic-bezier(.34,1.56,.64,1)}
 .result-box.vis{display:flex}
-.r-title{font-family:'Fraunces',serif;font-size:1.25rem;font-weight:900;color:var(--escuro)}
-.r-sub{font-size:.9rem;color:#555;line-height:1.45}
+.r-title{font-family:'Fraunces',serif;font-size:1.2rem;font-weight:900;color:var(--escuro)}
+.r-sub{font-size:.88rem;color:#555;line-height:1.45}
 
-/* FOOTER */
-footer{
-  text-align:center;font-size:.72rem;color:#ccc;
-  padding:16px 16px 30px;line-height:1.7;
-}
+footer{text-align:center;font-size:.7rem;color:#ccc;padding:14px 16px 30px;line-height:1.7}
 
 @keyframes popIn{from{transform:scale(.85);opacity:0}to{transform:scale(1);opacity:1}}
 @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 .bounce{animation:bounce .42s ease}
-.confetti-piece{
-  position:fixed;width:10px;height:10px;border-radius:2px;
-  animation:cfall 2.2s ease-in forwards;pointer-events:none;z-index:999;
-}
-@keyframes cfall{
-  0%{transform:translateY(-20px) rotate(0);opacity:1}
-  100%{transform:translateY(110vh) rotate(720deg);opacity:0}
-}
+.confetti-piece{position:fixed;width:10px;height:10px;border-radius:2px;
+  animation:cfall 2.2s ease-in forwards;pointer-events:none;z-index:999}
+@keyframes cfall{0%{transform:translateY(-20px) rotate(0);opacity:1}
+  100%{transform:translateY(110vh) rotate(720deg);opacity:0}}
 </style>
 </head>
 <body>
 
-<!-- TOPO FIXO -->
 <div class="top-bar">
   <div class="top-brand">Bingo <span>70+</span></div>
   <div class="top-score">
@@ -225,7 +126,6 @@ footer{
   </div>
 </div>
 
-<!-- HERO -->
 <div class="hero">
   <div class="badge">✨ Longeslescência em jogo</div>
   <h1>Bingo <span>70+</span></h1>
@@ -233,32 +133,27 @@ footer{
   <p class="autoria">Ricardo de Faria Barros · Psicólogo</p>
 </div>
 
-<!-- NAVEGAÇÃO -->
 <div class="nav-wrap">
   <button class="nav-btn" id="btnPrev" onclick="changePage(-1)" disabled>← Ant.</button>
   <div class="page-info">
     <div class="page-num" id="pageNum">1 / 12</div>
-    <div class="page-label" id="pageLabel">Bloco 1 · Os Verbos</div>
+    <div class="page-label" id="pageLabel">Bloco 1 · Verbos</div>
   </div>
   <button class="nav-btn" id="btnNext" onclick="changePage(1)">Próx. →</button>
 </div>
 
-<!-- BLOCO TITLE -->
 <div class="bloco-title">
   <div class="bloco-badge" id="blocoBadge">Bloco 1</div>
   <div class="bloco-name" id="blocoName">Os 11 Verbos da Vida</div>
 </div>
 
-<!-- BARRA DE PROGRESSO -->
 <div class="progress-wrap">
   <div class="progress-bar"><div class="progress-fill" id="progFill" style="width:0%"></div></div>
-  <div class="progress-label" id="progLabel">0 de 70 marcadas</div>
+  <div class="progress-label" id="progLabel">0 de 70 marcadas (0%)</div>
 </div>
 
-<!-- GRID -->
 <div class="grid" id="grid"></div>
 
-<!-- RESULTADO -->
 <div class="result-box" id="rbox">
   <div class="r-title" id="rtitle"></div>
   <div class="r-sub" id="rsub"></div>
@@ -273,114 +168,190 @@ footer{
 <script>
 const ALL = [
   // ── BLOCO 1 · 35 CASAS · OS VERBOS ──
-  {v:"Conhecer",       m:"",e:"🗺️",t:"Já visitei um lugar novo esse ano — só pra conhecer",                                    c:"#FFD16699",sol:false},
-  {v:"Conhecer",       m:"",e:"📚",t:"Estou lendo (ou ouvindo) um livro novo agora mesmo",                                     c:"#FFD16699",sol:false},
-  {v:"Conhecer",       m:"",e:"🤝",t:"Fiz amizade com alguém de uma geração diferente da minha",                               c:"#FFD16699",sol:false},
-  {v:"Conhecer",       m:"",e:"🌐",t:"Aprendi a usar uma tecnologia nova sem pedir socorro a ninguém",                         c:"#FFD16699",sol:false},
-  {v:"Conviver",       m:"",e:"🏠",t:"Gosto de receber em casa. Porta aberta pra quem vier!",                                  c:"#FFD16699",sol:false},
-  {v:"Conviver",       m:"",e:"🌳",t:"Passei num parque ou praça só pra estar com gente",                                      c:"#FFD16699",sol:false},
-  {v:"Conviver",       m:"",e:"🎲",t:"Joguei baralho, dominó, xadrez ou jogo de mesa recentemente",                            c:"#FFD16699",sol:false},
-  {v:"Criar",          m:"",e:"🎨",t:"Faço algo com as mãos: cozinhar, pintar, cultivar, artesanato…",                        c:"#06D6A099",sol:false},
-  {v:"Criar",          m:"",e:"✍️",t:"Já escrevi algo só por prazer: carta, poesia, diário…",                                 c:"#06D6A099",sol:false},
-  {v:"Criar",          m:"",e:"🌱",t:"Tenho um cantinho com plantas que eu mesmo(a) cuido",                                    c:"#06D6A099",sol:false},
-  {v:"Colaborar",      m:"",e:"🏘️",t:"Pode me chamar pra reunião de condomínio. Eu apareço.",                                 c:"#06D6A099",sol:false},
-  {v:"Colaborar",      m:"",e:"🙋",t:"Já fui voluntário(a) em algo que importava pra mim",                                    c:"#06D6A099",sol:false},
-  {v:"Colaborar",      m:"",e:"💡",t:"Já ajudei alguém mais jovem com minha experiência de vida",                              c:"#06D6A099",sol:false},
-  {v:"Cuidar",         m:"",e:"🩺",t:"Faço meu check-up em dia — corpo e mente, sem enrolar",                                 c:"#06D6A099",sol:false},
-  {v:"Cuidar",         m:"",e:"😴",t:"Durmo bem. O sono é sagrado pra mim.",                                                  c:"#06D6A099",sol:false},
-  {v:"Cuidar",         m:"",e:"🏋️",t:"Tenho atividade física regular — e faço com prazer, não com culpa",                    c:"#06D6A099",sol:false},
-  {v:"Comemorar",      m:"",e:"🎂",t:"Não perco nenhuma comemoração. Sou presença garantida!",                                c:"#FF6B9D99",sol:false},
-  {v:"Comemorar",      m:"",e:"🥂",t:"Comemoro as pequenas conquistas do dia a dia",                                           c:"#FF6B9D99",sol:false},
-  {v:"Comemorar",      m:"",e:"🎊",t:"Tenho um ritual semanal pra marcar a semana com alegria",                                c:"#FF6B9D99",sol:false},
-  {v:"Compartilhar",   m:"",e:"🍽️",t:"Preparo uma comida especial pra alguém de vez em quando",                               c:"#FF6B9D99",sol:false},
-  {v:"Compartilhar",   m:"",e:"📸",t:"Compartilho fotos e histórias da minha vida com quem ama",                              c:"#FF6B9D99",sol:false},
-  {v:"Compartilhar",   m:"",e:"🎵",t:"Já indiquei uma música, série ou livro pra alguém essa semana",                         c:"#FF6B9D99",sol:false},
-  {v:"Conversar",      m:"",e:"📞",t:"Telefono pros filhos (ou amigos) só pra saber como estão — sem motivo especial",         c:"#60C0D899",sol:false},
-  {v:"Conversar",      m:"",e:"☕",t:"Tenho pelo menos um(a) amigo(a) com quem falo de verdade",                              c:"#60C0D899",sol:false},
-  {v:"Conversar",      m:"",e:"🗣️",t:"Já contei uma história da minha vida pra alguém que queria ouvir",                     c:"#60C0D899",sol:false},
-  {v:"Comparecer",     m:"",e:"⛪",t:"Tenho um compromisso semanal que não abro mão de estar presente",                        c:"#60C0D899",sol:false},
-  {v:"Comparecer",     m:"",e:"🎭",t:"Fui a um show, espetáculo ou evento cultural no último ano",                             c:"#60C0D899",sol:false},
-  {v:"Comparecer",     m:"",e:"🏃",t:"Apareço nas caminhadas, encontros e atividades do grupo",                                c:"#60C0D899",sol:false},
-  {v:"Começar",        m:"",e:"🎸",t:"Tenho algo que sempre quis aprender — e vou começar em breve",                          c:"#B57EE899",sol:false},
-  {v:"Começar",        m:"",e:"🔑",t:"Já comecei algo novo depois dos 50. E não me arrependo.",                               c:"#B57EE899",sol:false},
-  {v:"Começar",        m:"",e:"📅",t:"Tenho um plano — mesmo pequeno — para os próximos meses",                               c:"#B57EE899",sol:false},
-  {v:"Cativar",        m:"",e:"😄",t:"Já fiz alguém rir hoje. De propósito.",                                                 c:"#B57EE899",sol:false},
-  {v:"Cativar",        m:"",e:"💌",t:"Mandei uma mensagem carinhosa só pra dizer que estava pensando na pessoa",               c:"#B57EE899",sol:false},
-  {v:"Cativar",        m:"",e:"👵",t:"As crianças (ou jovens) da família gostam de me ter por perto",                         c:"#B57EE899",sol:false},
-  {v:"Cativar",        m:"",e:"🙏",t:"Me sinto grato(a) com a vida que estou vivendo — hoje, agora",                          c:"#B57EE899",sol:false},
+  {v:"Conhecer",    m:"",e:"🗺️",t:"Já visitei um lugar novo esse ano — só pra conhecer",                               c:"#FFD16699",sol:false},
+  {v:"Conhecer",    m:"",e:"📚",t:"Estou lendo (ou ouvindo) um livro novo agora mesmo",                                c:"#FFD16699",sol:false},
+  {v:"Conhecer",    m:"",e:"🤝",t:"Fiz amizade com alguém de uma geração diferente da minha",                          c:"#FFD16699",sol:false},
+  {v:"Conhecer",    m:"",e:"🌐",t:"Aprendi a usar uma tecnologia nova sem pedir socorro a ninguém",                    c:"#FFD16699",sol:false},
+  {v:"Conviver",    m:"",e:"🏠",t:"Gosto de receber em casa. Porta aberta pra quem vier!",                             c:"#FFD16699",sol:false},
+  {v:"Conviver",    m:"",e:"🌳",t:"Passei num parque ou praça só pra estar com gente",                                 c:"#FFD16699",sol:false},
+  {v:"Conviver",    m:"",e:"🎲",t:"Joguei baralho, dominó, xadrez ou jogo de mesa recentemente",                       c:"#FFD16699",sol:false},
+  {v:"Criar",       m:"",e:"🎨",t:"Faço algo com as mãos: cozinhar, pintar, cultivar…",                               c:"#06D6A099",sol:false},
+  {v:"Criar",       m:"",e:"✍️",t:"Já escrevi algo só por prazer: carta, poesia, diário…",                            c:"#06D6A099",sol:false},
+  {v:"Criar",       m:"",e:"🌱",t:"Tenho um cantinho com plantas que eu mesmo(a) cuido",                               c:"#06D6A099",sol:false},
+  {v:"Colaborar",   m:"",e:"🏘️",t:"Pode me chamar pra reunião de condomínio. Eu apareço.",                            c:"#06D6A099",sol:false},
+  {v:"Colaborar",   m:"",e:"🙋",t:"Já fui voluntário(a) em algo que importava pra mim",                               c:"#06D6A099",sol:false},
+  {v:"Colaborar",   m:"",e:"💡",t:"Já ajudei alguém mais jovem com minha experiência de vida",                         c:"#06D6A099",sol:false},
+  {v:"Cuidar",      m:"",e:"🩺",t:"Faço meu check-up em dia — corpo e mente, sem enrolar",                            c:"#06D6A099",sol:false},
+  {v:"Cuidar",      m:"",e:"😴",t:"Durmo bem. O sono é sagrado pra mim.",                                             c:"#06D6A099",sol:false},
+  {v:"Cuidar",      m:"",e:"🏋️",t:"Tenho atividade física regular — e faço com prazer, não com culpa",               c:"#06D6A099",sol:false},
+  {v:"Comemorar",   m:"",e:"🎂",t:"Não perco nenhuma comemoração. Sou presença garantida!",                           c:"#FF6B9D99",sol:false},
+  {v:"Comemorar",   m:"",e:"🥂",t:"Comemoro as pequenas conquistas do dia a dia",                                      c:"#FF6B9D99",sol:false},
+  {v:"Comemorar",   m:"",e:"🎊",t:"Tenho um ritual semanal pra marcar a semana com alegria",                           c:"#FF6B9D99",sol:false},
+  {v:"Compartilhar",m:"",e:"🍽️",t:"Preparo uma comida especial pra alguém de vez em quando",                          c:"#FF6B9D99",sol:false},
+  {v:"Compartilhar",m:"",e:"📸",t:"Compartilho fotos e histórias da minha vida com quem ama",                         c:"#FF6B9D99",sol:false},
+  {v:"Compartilhar",m:"",e:"🎵",t:"Já indiquei uma música, série ou livro pra alguém essa semana",                    c:"#FF6B9D99",sol:false},
+  {v:"Conversar",   m:"",e:"📞",t:"Telefono pros filhos (ou amigos) só pra saber como estão",                         c:"#60C0D899",sol:false},
+  {v:"Conversar",   m:"",e:"☕",t:"Tenho pelo menos um(a) amigo(a) com quem falo de verdade",                         c:"#60C0D899",sol:false},
+  {v:"Conversar",   m:"",e:"🗣️",t:"Já contei uma história da minha vida pra alguém que queria ouvir",                c:"#60C0D899",sol:false},
+  {v:"Comparecer",  m:"",e:"⛪",t:"Tenho um compromisso semanal que não abro mão de estar presente",                   c:"#60C0D899",sol:false},
+  {v:"Comparecer",  m:"",e:"🎭",t:"Fui a um show, espetáculo ou evento cultural no último ano",                        c:"#60C0D899",sol:false},
+  {v:"Comparecer",  m:"",e:"🏃",t:"Apareço nas caminhadas, encontros e atividades do grupo",                           c:"#60C0D899",sol:false},
+  {v:"Começar",     m:"",e:"🎸",t:"Tenho algo que sempre quis aprender — e vou começar em breve",                     c:"#B57EE899",sol:false},
+  {v:"Começar",     m:"",e:"🔑",t:"Já comecei algo novo depois dos 50. E não me arrependo.",                          c:"#B57EE899",sol:false},
+  {v:"Começar",     m:"",e:"📅",t:"Tenho um plano — mesmo pequeno — para os próximos meses",                          c:"#B57EE899",sol:false},
+  {v:"Cativar",     m:"",e:"😄",t:"Já fiz alguém rir hoje. De propósito.",                                            c:"#B57EE899",sol:false},
+  {v:"Cativar",     m:"",e:"💌",t:"Mandei uma mensagem carinhosa só pra dizer que estava pensando",                   c:"#B57EE899",sol:false},
+  {v:"Cativar",     m:"",e:"👵",t:"As crianças (ou jovens) da família gostam de me ter por perto",                    c:"#B57EE899",sol:false},
+  {v:"Cativar",     m:"",e:"🙏",t:"Me sinto grato(a) com a vida que estou vivendo — hoje, agora",                     c:"#B57EE899",sol:false},
 
-  // ── BLOCO 2 · 35 CASAS · AS 4 SOLIDÕES ──
-  // ESTRUTURAL (9)
-  {v:"Solidão Estrutural",m:"",              e:"🚦",t:"Já perdi o semáforo no meio da travessia — o sinal não esperou por mim",               c:"#7BA7BC88",sol:true},
-  {v:"Solidão Estrutural",m:"🗄️ Arquivo-Morto",e:"🪑",t:"Sinto que certos espaços foram projetados como se eu fosse deixar de existir",         c:"#7BA7BC88",sol:true},
-  {v:"Solidão Estrutural",m:"🏺 Antiquário",  e:"🚌",t:"Já fui tratado(a) como peça de museu: apreciado(a) de longe, não incluído(a) na roda",  c:"#7BA7BC88",sol:true},
-  {v:"Solidão Estrutural",m:"🫙 Cristaleira", e:"🏙️",t:"Guardei planos 'pra quando a cidade melhorar' — e o tempo foi passando",               c:"#7BA7BC88",sol:true},
-  {v:"Solidão Estrutural",m:"",              e:"🛗", t:"Já deixei de ir a um lugar porque o acesso tornava tudo complicado demais",             c:"#7BA7BC88",sol:true},
-  {v:"Solidão Estrutural",m:"🎊 Pano de Confetes",e:"🎉",t:"A cidade não fez uma festa pra mim — mas aprendi a fazer a minha",                 c:"#7BA7BC88",sol:true},
-  {v:"Solidão Estrutural",m:"",              e:"🌆",t:"A cidade anda mais rápido que eu — e decidi seguir o meu ritmo mesmo assim",             c:"#7BA7BC88",sol:true},
-  {v:"Solidão Estrutural",m:"🏺 Antiquário",  e:"🔦",t:"Me reconheço valioso(a) demais pra ficar numa vitrine — prefiro circular",              c:"#7BA7BC88",sol:true},
-  {v:"Solidão Estrutural",m:"🗄️ Arquivo-Morto",e:"📋",t:"Já fui tratado(a) como número numa fila em vez de pessoa com história",               c:"#7BA7BC88",sol:true},
-  // FUNCIONAL (9)
-  {v:"Solidão Funcional", m:"",              e:"💬",t:"Já estive numa sala e percebi que o almoço aconteceu — sem mim",                         c:"#8A9E7B88",sol:true},
-  {v:"Solidão Funcional", m:"📱 Grupo",       e:"📱",t:"Já fiquei de fora de um grupo sem saber por quê — e isso doeu mais do que eu esperava",  c:"#8A9E7B88",sol:true},
-  {v:"Solidão Funcional", m:"🗄️ Arquivo-Morto",e:"🗂️",t:"Minha experiência foi tratada como arquivo-morto: útil no passado, ignorada agora",   c:"#8A9E7B88",sol:true},
-  {v:"Solidão Funcional", m:"🏺 Antiquário",  e:"🪞",t:"Já fui elogiado(a) pelo que fui, não pelo que sou — como quem admira uma foto antiga",   c:"#8A9E7B88",sol:true},
-  {v:"Solidão Funcional", m:"🫙 Cristaleira", e:"🍷",t:"Guardei minha capacidade pra 'uma boa oportunidade' — que nunca foi oferecida",          c:"#8A9E7B88",sol:true},
-  {v:"Solidão Funcional", m:"🎊 Pano de Confetes",e:"🎈",t:"Guardei minha animação porque ninguém mais parecia querer celebrar comigo",          c:"#8A9E7B88",sol:true},
-  {v:"Solidão Funcional", m:"",              e:"🤫",t:"Já fui à reunião da qual não fui avisado(a) — e fui por conta própria mesmo assim",       c:"#8A9E7B88",sol:true},
-  {v:"Solidão Funcional", m:"🗄️ Arquivo-Morto",e:"💼",t:"Senti que meu papel havia sido arquivado antes de eu terminar de escrevê-lo",          c:"#8A9E7B88",sol:true},
-  {v:"Solidão Funcional", m:"",              e:"🪑",t:"Já ocupei espaço fisicamente e percebi que estava ausente de verdade",                    c:"#8A9E7B88",sol:true},
-  // SOCIAL (9)
-  {v:"Solidão Social",    m:"",              e:"🎂",t:"Já estive no meu próprio aniversário cercado(a) de gente e profundamente só",             c:"#C4956A88",sol:true},
-  {v:"Solidão Social",    m:"🎊 Pano de Confetes",e:"🥳",t:"A festa estava cheia — mas ninguém perguntou de mim de verdade",                    c:"#C4956A88",sol:true},
-  {v:"Solidão Social",    m:"",              e:"📞",t:"Já atendi uma ligação em que a pessoa falou muito — e não perguntou nada sobre mim",      c:"#C4956A88",sol:true},
-  {v:"Solidão Social",    m:"🏺 Antiquário",  e:"🖼️",t:"Na família, às vezes me sinto apreciado(a) na parede — mas não sentado(a) à mesa",      c:"#C4956A88",sol:true},
-  {v:"Solidão Social",    m:"🫙 Cristaleira", e:"💎",t:"Tenho muito a oferecer, mas guardei esse presente pra alguém que nunca foi buscá-lo",    c:"#C4956A88",sol:true},
-  {v:"Solidão Social",    m:"",              e:"👶",t:"Já recebi um beijo rápido de passagem de quem eu queria que ficasse mais um pouco",        c:"#C4956A88",sol:true},
-  {v:"Solidão Social",    m:"🗄️ Arquivo-Morto",e:"📖",t:"Tenho histórias que precisam ser ouvidas — e cansei de guardá-las só pra mim",         c:"#C4956A88",sol:true},
-  {v:"Solidão Social",    m:"",              e:"❓",t:"Já quis que alguém perguntasse 'Como você está?' e esperasse a resposta de verdade",       c:"#C4956A88",sol:true},
-  {v:"Solidão Social",    m:"🎊 Pano de Confetes",e:"✨",t:"Resolvi abrir o pano dos confetes e celebrar sozinho(a) mesmo — e foi bom!",         c:"#C4956A88",sol:true},
-  // EXISTENCIAL (8)
-  {v:"Solidão Existencial",m:"",             e:"🌵",t:"Já percebi que estava cultivando espinhos onde poderiam ter crescido flores",              c:"#9B7DB688",sol:true},
-  {v:"Solidão Existencial",m:"🫙 Cristaleira",e:"🫙",t:"Guardo minha alegria na cristaleira — esperando uma ocasião especial que é hoje",        c:"#9B7DB688",sol:true},
-  {v:"Solidão Existencial",m:"🗄️ Arquivo-Morto",e:"😒",t:"Já me surpreendi revirando mágoas do arquivo-morto em vez de abrir janelas novas",    c:"#9B7DB688",sol:true},
-  {v:"Solidão Existencial",m:"",             e:"🏰",t:"Já construí uma muralha pra me proteger — e percebi que ela também me prendia",           c:"#9B7DB688",sol:true},
-  {v:"Solidão Existencial",m:"🏺 Antiquário", e:"⏳",t:"Já me comportei como objeto de antiquário: valioso(a), mas tratando a vida como exposição",c:"#9B7DB688",sol:true},
-  {v:"Solidão Existencial",m:"🎊 Pano de Confetes",e:"🧹",t:"Já varri os confetes em vez de espalhar — achei que ninguém ia celebrar comigo",   c:"#9B7DB688",sol:true},
-  {v:"Solidão Existencial",m:"",             e:"💡",t:"Tive o momento em que percebi: sou eu que afasto as pessoas — e escolhi mudar",           c:"#9B7DB688",sol:true},
-  {v:"Solidão Existencial",m:"🫙 Cristaleira",e:"🌸",t:"Decidi abrir a cristaleira, usar a porcelana boa e convidar a vida pra entrar",          c:"#9B7DB688",sol:true},
+  // ── BLOCO 2 · 35 CASAS · AS 4 SOLIDÕES (redação positiva: marcar = superei/não me reconheço nisso) ──
+
+  // SOLIDÃO ESTRUTURAL (9) — cidade que não foi feita pra você
+  {v:"Solidão Estrutural", m:"",                    e:"🚦",
+   t:"Não deixo que o ritmo da cidade dite o meu. Sigo no meu tempo — e chego lá.",
+   c:"#7BA7BC88",sol:true},
+  {v:"Solidão Estrutural", m:"🗄️ Arquivo-Morto",    e:"🏙️",
+   t:"Não me sinto arquivo-morto da cidade. Ainda tenho muito a circular, ocupar e contribuir.",
+   c:"#7BA7BC88",sol:true},
+  {v:"Solidão Estrutural", m:"🏺 Antiquário",        e:"🚶",
+   t:"Não sou peça de vitrine — sou pessoa em movimento. A cidade que se adapte.",
+   c:"#7BA7BC88",sol:true},
+  {v:"Solidão Estrutural", m:"🫙 Cristaleira",       e:"🗺️",
+   t:"Não guardo meus planos na cristaleira esperando a cidade melhorar. Saio e faço acontecer.",
+   c:"#7BA7BC88",sol:true},
+  {v:"Solidão Estrutural", m:"",                    e:"🛗",
+   t:"Não abro mão de participar por causa de barreiras. Procuro o caminho e vou do mesmo jeito.",
+   c:"#7BA7BC88",sol:true},
+  {v:"Solidão Estrutural", m:"🎊 Pano de Confetes",  e:"🎉",
+   t:"Não espero a cidade me fazer uma festa. Abro meu próprio pano de confetes e celebro.",
+   c:"#7BA7BC88",sol:true},
+  {v:"Solidão Estrutural", m:"",                    e:"🌆",
+   t:"Não me sinto excluído(a) dos espaços públicos. Uso a cidade com presença e dignidade.",
+   c:"#7BA7BC88",sol:true},
+  {v:"Solidão Estrutural", m:"🏺 Antiquário",        e:"🔦",
+   t:"Não me deixo tratar como relíquia. Sou contemporâneo(a) — estou aqui, agora, participando.",
+   c:"#7BA7BC88",sol:true},
+  {v:"Solidão Estrutural", m:"🗄️ Arquivo-Morto",    e:"📋",
+   t:"Não me sinto número em fila. Sei quem sou, tenho história — e faço questão de ser visto(a).",
+   c:"#7BA7BC88",sol:true},
+
+  // SOLIDÃO FUNCIONAL (9) — invisível no grupinho
+  {v:"Solidão Funcional",  m:"",                    e:"💬",
+   t:"Não me sinto invisível nos grupos. Quando percebo que estou à margem, me aproximo.",
+   c:"#8A9E7B88",sol:true},
+  {v:"Solidão Funcional",  m:"📱 Grupo",             e:"📱",
+   t:"Não fico esperando ser adicionado(a). Se o grupo é bom, eu mesmo(a) me apresento e entro.",
+   c:"#8A9E7B88",sol:true},
+  {v:"Solidão Funcional",  m:"🗄️ Arquivo-Morto",    e:"🗂️",
+   t:"Minha experiência não é arquivo-morto. Ela está viva, circulando e sendo útil agora.",
+   c:"#8A9E7B88",sol:true},
+  {v:"Solidão Funcional",  m:"🏺 Antiquário",        e:"🪞",
+   t:"Não sou retrato do que fui — sou pessoa inteira do que sou hoje. E isso é suficiente.",
+   c:"#8A9E7B88",sol:true},
+  {v:"Solidão Funcional",  m:"🫙 Cristaleira",       e:"🍷",
+   t:"Não guardo minha capacidade na cristaleira. Uso o que sei, ofereço o que tenho — agora.",
+   c:"#8A9E7B88",sol:true},
+  {v:"Solidão Funcional",  m:"🎊 Pano de Confetes",  e:"🎈",
+   t:"Não escondo minha animação. Levo entusiasmo pro grupo mesmo quando ninguém pediu.",
+   c:"#8A9E7B88",sol:true},
+  {v:"Solidão Funcional",  m:"",                    e:"🤫",
+   t:"Não fico esperando convite. Se a reunião importa, apareço — avisado(a) ou não.",
+   c:"#8A9E7B88",sol:true},
+  {v:"Solidão Funcional",  m:"🗄️ Arquivo-Morto",    e:"💼",
+   t:"Não me sinto encerrado(a). Meu papel ainda está sendo escrito — e eu seguro a caneta.",
+   c:"#8A9E7B88",sol:true},
+  {v:"Solidão Funcional",  m:"",                    e:"🪑",
+   t:"Não ocupo espaço por obrigação. Quando estou presente, estou de verdade — corpo e alma.",
+   c:"#8A9E7B88",sol:true},
+
+  // SOLIDÃO SOCIAL (9) — rodeado(a) e só
+  {v:"Solidão Social",     m:"",                    e:"🎂",
+   t:"Não me sinto só em meio à família. Sei criar conexão real mesmo nas reuniões cheias.",
+   c:"#C4956A88",sol:true},
+  {v:"Solidão Social",     m:"🎊 Pano de Confetes",  e:"🥳",
+   t:"Não guardo os confetes esperando que alguém abra. Eu abro — e convido todo mundo.",
+   c:"#C4956A88",sol:true},
+  {v:"Solidão Social",     m:"",                    e:"📞",
+   t:"Não me sinto invisível nas conversas. Se não perguntam, eu me apresento e conto.",
+   c:"#C4956A88",sol:true},
+  {v:"Solidão Social",     m:"🏺 Antiquário",        e:"🖼️",
+   t:"Não me sinto excluído(a) ao participar de eventos familiares. Estou na mesa, não na parede.",
+   c:"#C4956A88",sol:true},
+  {v:"Solidão Social",     m:"🫙 Cristaleira",       e:"💎",
+   t:"Não guardo o melhor de mim na cristaleira. Ofereço minha presença — inteira e agora.",
+   c:"#C4956A88",sol:true},
+  {v:"Solidão Social",     m:"",                    e:"👶",
+   t:"Não me contento com beijo de passagem. Peço o abraço demorado que eu mereço.",
+   c:"#C4956A88",sol:true},
+  {v:"Solidão Social",     m:"🗄️ Arquivo-Morto",    e:"📖",
+   t:"Não deixo minhas histórias no arquivo-morto. Conto, compartilho e ensino com elas.",
+   c:"#C4956A88",sol:true},
+  {v:"Solidão Social",     m:"",                    e:"❓",
+   t:"Não espero que alguém pergunte. Falo de mim, de como estou — sem esperar permissão.",
+   c:"#C4956A88",sol:true},
+  {v:"Solidão Social",     m:"🎊 Pano de Confetes",  e:"✨",
+   t:"Não espero a festa perfeita para ser feliz. Faço a minha festa — e convido quem quiser vir.",
+   c:"#C4956A88",sol:true},
+
+  // SOLIDÃO EXISTENCIAL (8) — espinhos no lugar de flores
+  {v:"Solidão Existencial",m:"",                    e:"🌸",
+   t:"Não desenvolvo espinhos onde podem crescer flores. Escolho a abertura em vez da amargura.",
+   c:"#9B7DB688",sol:true},
+  {v:"Solidão Existencial",m:"🫙 Cristaleira",       e:"🫙",
+   t:"Não guardo minha alegria pra uma ocasião especial. A ocasião especial é hoje — sempre.",
+   c:"#9B7DB688",sol:true},
+  {v:"Solidão Existencial",m:"🗄️ Arquivo-Morto",    e:"🗂️",
+   t:"Não reviro o arquivo-morto das mágoas. Fecho essa gaveta e abro a janela do que vem.",
+   c:"#9B7DB688",sol:true},
+  {v:"Solidão Existencial",m:"",                    e:"🏰",
+   t:"Não construo muralhas. Prefiro pontes — mesmo sabendo que pontes exigem coragem.",
+   c:"#9B7DB688",sol:true},
+  {v:"Solidão Existencial",m:"🏺 Antiquário",        e:"⏳",
+   t:"Não me trato como objeto de antiquário. Sou contemporâneo(a) — e tenho futuro pela frente.",
+   c:"#9B7DB688",sol:true},
+  {v:"Solidão Existencial",m:"🎊 Pano de Confetes",  e:"🎊",
+   t:"Não dobro o pano dos confetes. Espalho alegria — mesmo quando ninguém pede.",
+   c:"#9B7DB688",sol:true},
+  {v:"Solidão Existencial",m:"",                    e:"💡",
+   t:"Não culpo os outros pelo meu isolamento. Reconheço minha parte — e escolho diferente.",
+   c:"#9B7DB688",sol:true},
+  {v:"Solidão Existencial",m:"🫙 Cristaleira",       e:"🌺",
+   t:"Abri minha cristaleira, usei a porcelana boa e convidei a vida pra entrar. E ela entrou.",
+   c:"#9B7DB688",sol:true},
 ];
+
+console.assert(ALL.length === 70, 'ERRO: ' + ALL.length + ' cards');
 
 const PER_PAGE = 6;
-const TOTAL_PAGES = Math.ceil(ALL.length / PER_PAGE); // 12
+const TOTAL_PAGES = Math.ceil(ALL.length / PER_PAGE);
+
+function getPageInfo(page) {
+  const start = page * PER_PAGE;
+  const end = Math.min(start + PER_PAGE, ALL.length);
+  const slice = ALL.slice(start, end);
+  const isSol = slice.every(c => c.sol);
+  const isVerb = slice.every(c => !c.sol);
+  if (isVerb) {
+    const verbos = [...new Set(slice.map(c => c.v))];
+    return {badge:"Bloco 1 · Verbos da Vida", name: verbos.join(' · ')};
+  }
+  if (isSol) {
+    const tipos = [...new Set(slice.map(c => c.v))];
+    return {badge:"Bloco 2 · As 4 Solidões", name: tipos.join(' · ')};
+  }
+  return {badge:"Bloco 1 → 2", name:"Verbos & Solidões"};
+}
+
 let currentPage = 0;
 let marked = new Set();
-
-const BLOCO_INFO = [
-  // page 0-5 → Bloco 1
-  {badge:"Bloco 1 · Verbos da Vida",name:"Conhecer · Conviver · Criar"},
-  {badge:"Bloco 1 · Verbos da Vida",name:"Colaborar · Cuidar · Comemorar"},
-  {badge:"Bloco 1 · Verbos da Vida",name:"Compartilhar · Conversar"},
-  {badge:"Bloco 1 · Verbos da Vida",name:"Comparecer · Começar"},
-  {badge:"Bloco 1 · Verbos da Vida",name:"Cativar"},
-  {badge:"Bloco 1 · Verbos da Vida",name:"Cativar · Bônus"},
-  // page 6-11 → Bloco 2
-  {badge:"Bloco 2 · As 4 Solidões",name:"Solidão Estrutural"},
-  {badge:"Bloco 2 · As 4 Solidões",name:"Solidão Estrutural · Final"},
-  {badge:"Bloco 2 · As 4 Solidões",name:"Solidão Funcional"},
-  {badge:"Bloco 2 · As 4 Solidões",name:"Solidão Funcional · Social"},
-  {badge:"Bloco 2 · As 4 Solidões",name:"Solidão Social"},
-  {badge:"Bloco 2 · As 4 Solidões",name:"Solidão Existencial"},
-];
 
 function renderPage() {
   const grid = document.getElementById('grid');
   grid.innerHTML = '';
   const start = currentPage * PER_PAGE;
-  const slice = ALL.slice(start, start + PER_PAGE);
-
-  slice.forEach((d, i) => {
-    const idx = start + i;
+  const end = Math.min(start + PER_PAGE, ALL.length);
+  for (let idx = start; idx < end; idx++) {
+    const d = ALL[idx];
     const el = document.createElement('div');
     el.className = 'card' + (d.sol ? ' sol' : '');
     el.style.setProperty('--cc', d.c);
@@ -393,32 +364,27 @@ function renderPage() {
       '<div class="card-text">' + d.t + '</div>';
     el.addEventListener('click', () => toggleCard(el, idx));
     grid.appendChild(el);
-  });
-
-  // atualiza info de navegação
+  }
+  const info = getPageInfo(currentPage);
   document.getElementById('pageNum').textContent = (currentPage + 1) + ' / ' + TOTAL_PAGES;
-  const info = BLOCO_INFO[currentPage] || {badge:'',name:''};
+  document.getElementById('pageLabel').textContent = info.badge;
   document.getElementById('blocoBadge').textContent = info.badge;
   document.getElementById('blocoName').textContent = info.name;
   document.getElementById('btnPrev').disabled = currentPage === 0;
   document.getElementById('btnNext').disabled = currentPage === TOTAL_PAGES - 1;
-
-  // scroll topo suave
-  window.scrollTo({top: 0, behavior:'smooth'});
+  window.scrollTo({top:0, behavior:'smooth'});
 }
 
 function changePage(dir) {
-  currentPage = Math.max(0, Math.min(TOTAL_PAGES - 1, currentPage + dir));
+  const next = currentPage + dir;
+  if (next < 0 || next >= TOTAL_PAGES) return;
+  currentPage = next;
   renderPage();
 }
 
 function toggleCard(el, i) {
   if (marked.has(i)) { marked.delete(i); el.classList.remove('on'); }
-  else {
-    marked.add(i);
-    el.classList.add('on','bounce');
-    setTimeout(() => el.classList.remove('bounce'), 420);
-  }
+  else { marked.add(i); el.classList.add('on','bounce'); setTimeout(()=>el.classList.remove('bounce'),420); }
   updateScore();
 }
 
@@ -429,9 +395,7 @@ function updateScore() {
   document.getElementById('c1').textContent = b1;
   document.getElementById('c2').textContent = b2;
   document.getElementById('ct').textContent = tot;
-
-  // progresso
-  const pct = Math.round((tot / 70) * 100);
+  const pct = Math.round((tot/70)*100);
   document.getElementById('progFill').style.width = pct + '%';
   document.getElementById('progLabel').textContent = tot + ' de 70 marcadas (' + pct + '%)';
 
@@ -443,10 +407,10 @@ function updateScore() {
 
   if (tot <= 14) {
     tit.textContent = '🌱 A vida está te chamando — basta ir chegando';
-    sub.textContent = tot + ' casas. Cada uma é um passo de volta pra si mesmo(a).';
+    sub.textContent = tot + ' casas marcadas. Cada uma é um passo de volta pra si mesmo(a).';
   } else if (tot <= 28) {
     tit.textContent = '🌻 Florescendo com honestidade!';
-    sub.textContent = tot + ' marcações. Você tem coragem de olhar pra dentro e pra fora ao mesmo tempo.';
+    sub.textContent = tot + ' marcações. Coragem de olhar pra dentro e pra fora ao mesmo tempo.';
   } else if (tot <= 42) {
     tit.textContent = '🌳 Raízes fundas, frutos reais!';
     sub.textContent = tot + ' casas! Você conhece seus espinhos — e escolheu cultivar flores.';
@@ -466,35 +430,33 @@ function updateScore() {
 }
 
 function confetti(big) {
-  const cols = ['#F4631E','#FFD166','#06D6A0','#7BA7BC','#9B7DB6','#FF6B9D','#C4956A','#8A9E7B'];
+  const cols=['#F4631E','#FFD166','#06D6A0','#7BA7BC','#9B7DB6','#FF6B9D','#C4956A','#8A9E7B'];
   const n = big ? 80 : 35;
-  for (let i = 0; i < n; i++) setTimeout(() => {
-    const c = document.createElement('div');
-    c.className = 'confetti-piece';
-    c.style.cssText = 'left:' + (Math.random()*100) + 'vw;top:0;background:' +
-      cols[Math.floor(Math.random()*cols.length)] +
-      ';animation-duration:' + (1.4+Math.random()*1.4) + 's;animation-delay:' + (Math.random()*.6) + 's';
+  for (let i=0;i<n;i++) setTimeout(()=>{
+    const c=document.createElement('div');
+    c.className='confetti-piece';
+    c.style.cssText='left:'+(Math.random()*100)+'vw;top:0;background:'+
+      cols[Math.floor(Math.random()*cols.length)]+
+      ';animation-duration:'+(1.4+Math.random()*1.4)+'s;animation-delay:'+(Math.random()*.6)+'s';
     document.body.appendChild(c);
-    setTimeout(() => c.remove(), 3800);
-  }, i * 22);
+    setTimeout(()=>c.remove(),3800);
+  }, i*22);
 }
 
 function resetAll() {
-  marked = new Set();
-  document.querySelectorAll('.card').forEach(c => c.classList.remove('on','bounce'));
-  ['c1','c2','ct'].forEach(id => document.getElementById(id).textContent = '0');
-  document.getElementById('progFill').style.width = '0%';
-  document.getElementById('progLabel').textContent = '0 de 70 marcadas (0%)';
+  marked=new Set(); currentPage=0;
+  ['c1','c2','ct'].forEach(id=>document.getElementById(id).textContent='0');
+  document.getElementById('progFill').style.width='0%';
+  document.getElementById('progLabel').textContent='0 de 70 marcadas (0%)';
   document.getElementById('rbox').classList.remove('vis');
   renderPage();
 }
 
-// SWIPE SUPPORT
-let touchStartX = 0;
-document.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; });
-document.addEventListener('touchend', e => {
-  const dx = e.changedTouches[0].clientX - touchStartX;
-  if (Math.abs(dx) > 60) changePage(dx < 0 ? 1 : -1);
+let touchStartX=0;
+document.addEventListener('touchstart',e=>{touchStartX=e.touches[0].clientX},{passive:true});
+document.addEventListener('touchend',e=>{
+  const dx=e.changedTouches[0].clientX-touchStartX;
+  if(Math.abs(dx)>55) changePage(dx<0?1:-1);
 });
 
 renderPage();
